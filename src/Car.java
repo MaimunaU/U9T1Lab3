@@ -39,9 +39,23 @@ public class Car extends Vehicle
     }
   }
 
-  public void printCar()
+  @Override
+  public void printInfo()
   {
-    System.out.println("License Plate: " + getLicensePlate() + "\nToll Fee: " + getTollFee()
-            + "\nPassengers: " + getPassengers() + "\nElectric? " + electric + "\nDiscount applied? " + discountApplied);
+    super.printInfo();
+    System.out.println("\nElectric? " + electric + "\nDiscount applied? " + discountApplied);
+  }
+
+  @Override
+  public double calculateTollPrice()
+  {
+    if (getPassengers() > 4)
+    {
+      return getTollFee() * 4;
+    }
+    else
+    {
+      return super.calculateTollPrice();
+    }
   }
 }
