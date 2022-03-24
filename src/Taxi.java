@@ -17,7 +17,7 @@ public class Taxi extends Car {
     public void printInfo()
     {
         super.printInfo();
-        System.out.println("\nTotal Fare: " + fareCollected);
+        System.out.println("Total Fare: " + fareCollected);
     }
 
     public boolean chargeAndDropOffRiders(double farePerRider)

@@ -14,7 +14,7 @@ public class Truck extends Vehicle
   public void printInfo()
   {
     super.printInfo();
-    System.out.println("\nNumber of Axles: " + axles + "\nHas trailer? " + hasTrailer);
+    System.out.println("Number of Axles: " + axles + "\nHas trailer? " + hasTrailer);
   }
 
   @Override
